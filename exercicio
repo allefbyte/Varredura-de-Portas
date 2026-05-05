@@ -1,0 +1,42 @@
+<p> quem é o amor de allef ? </p>
+
+<form action="" method="POST">
+<label for="amor"> digite o amor de allef: </label  
+<input type="text" name="amor">
+<input type="submit" value="enviar">
+               </form>
+
+ 
+ 
+ <?php
+if ($_SERVER["REQUEST_METHOD"]=="POST"){
+
+$amor = $_POST['amor'];{
+
+if (strtolower($amor) == "andreza") {
+echo "acertou";
+
+
+}else{
+    echo "errado";
+}
+
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+?>
